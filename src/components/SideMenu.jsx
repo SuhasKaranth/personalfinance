@@ -1,17 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
+const SideMenu = () => {
   return (
-    <nav className="bg-white shadow-md py-3 font-inter rounded-lg mx-4 -mt-4 relative z-10">
-      <ul className="flex justify-around text-gray-700 font-medium">
+    <nav className="w-64 flex-shrink-0 bg-white shadow-md py-6 font-inter rounded-r-lg">
+      <ul className="flex flex-col text-gray-700 font-medium space-y-4 px-4">
         <li>
           <NavLink
             to="/dashboard"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
-                : 'hover:text-blue-500 transition-colors'
+                ? 'text-blue-600 border-l-2 border-blue-600 pl-2'
+                : 'hover:text-blue-500 transition-colors pl-2'
             }
           >
             Dashboard
@@ -22,8 +22,8 @@ const Navigation = () => {
             to="/expenses"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
-                : 'hover:text-blue-500 transition-colors'
+                ? 'text-blue-600 border-l-2 border-blue-600 pl-2'
+                : 'hover:text-blue-500 transition-colors pl-2'
             }
           >
             Expenses
@@ -34,8 +34,8 @@ const Navigation = () => {
             to="/budgeting"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
-                : 'hover:text-blue-500 transition-colors'
+                ? 'text-blue-600 border-l-2 border-blue-600 pl-2'
+                : 'hover:text-blue-500 transition-colors pl-2'
             }
           >
             Budgeting
@@ -46,8 +46,8 @@ const Navigation = () => {
             to="/savings"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
-                : 'hover:text-blue-500 transition-colors'
+                ? 'text-blue-600 border-l-2 border-blue-600 pl-2'
+                : 'hover:text-blue-500 transition-colors pl-2'
             }
           >
             Savings
@@ -58,8 +58,8 @@ const Navigation = () => {
             to="/debt"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
-                : 'hover:text-blue-500 transition-colors'
+                ? 'text-blue-600 border-l-2 border-blue-600 pl-2'
+                : 'hover:text-blue-500 transition-colors pl-2'
             }
           >
             Debt
@@ -70,8 +70,8 @@ const Navigation = () => {
             to="/learn"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
-                : 'hover:text-blue-500 transition-colors'
+                ? 'text-blue-600 border-l-2 border-blue-600 pl-2'
+                : 'hover:text-blue-500 transition-colors pl-2'
             }
           >
             Learn
@@ -82,4 +82,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default SideMenu;
